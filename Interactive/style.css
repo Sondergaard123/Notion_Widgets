@@ -22,49 +22,57 @@ html {
   line-height: 18px;
   color: #555;
   width: 100px;
-  i {
-    clear: both;
-    width: 16px;
-    height: 16px;
-    float: left;
-    opacity: 0.7;
-    margin-right: 8px;
-  }
+}
+.legend i {
+  clear: both;
+  width: 16px;
+  height: 16px;
+  float: left;
+  opacity: 0.7;
+  margin-right: 8px;
 }
 
-.map-box {
-  &.coordinates {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  &.country-data {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    padding: 6px 16px;
-    line-height: 1.1em;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: flex;
-    .col {
-      margin: auto;
-      padding-right: 16px;
-      float: left;
-      @include clearfix;
-      &:last-child {
-        padding-right: 0;
-      }
-      .row {
-        display: block;
-      }
-    }
-    .capital {
-      font-size: 75%;
-    }
-  }
+.map-box.coordinates {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.map-box.country-data {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 6px 16px;
+  line-height: 1.1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+}
+.map-box.country-data .col {
+  margin: auto;
+  padding-right: 16px;
+  float: left;
+}
+.map-box.country-data .col:before, .map-box.country-data .col:after {
+  content: " ";
+  display: table;
+}
+.map-box.country-data .col:after {
+  clear: both;
+}
+.map-box.country-data .col:last-child {
+  padding-right: 0;
+}
+.map-box.country-data .col .row {
+  display: block;
+}
+.map-box.country-data .capital {
+  font-size: 75%;
 }
 
 .angular-leaflet-map {
   height: 100%;
+}
+
+.leaflet-container{
+background-color: white;
 }
