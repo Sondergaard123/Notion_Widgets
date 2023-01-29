@@ -1,16 +1,3 @@
-@import "compass/css3";
-
-// From Bootstrap 3.3.4
-@mixin clearfix() {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
 body, html {
   height: 100%;
   padding: 0;
