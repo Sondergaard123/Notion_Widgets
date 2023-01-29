@@ -100,7 +100,7 @@ angular.module("app", ["leaflet-directive"])
       fillColor: getColor($scope.countries[country.id]),
       weight: 1, // 2
       opacity: 1,
-      color: 'grey',
+      color: 'white',
       //dashArray: '0', // '3'
       fillOpacity: 0.7
     };
