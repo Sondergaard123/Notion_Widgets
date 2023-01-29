@@ -22,7 +22,7 @@ html {
 
 .map-box, .legend {
   padding: 6px 8px;
-  background: rgba(#555555, 0.9);
+  background: rgba(#fff, 0.9);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(#000, 0.2);
   text-align: center;
@@ -33,7 +33,7 @@ html {
   font: 14px/16px Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 18px;
-  color: 25, 25, 25;
+  color: #555;
   width: 100px;
   i {
     clear: both;
